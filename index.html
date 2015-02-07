@@ -1,41 +1,82 @@
 <!DOCTYPE html>
 <html>
-<body>
+	<head>
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" rel="stylesheet">
+		<link href="main.css" rel="stylesheet"/>
+	</head>
 
-<audio id="bloop_sound" src="sounds/space_bloop.mp3"></audio>
-<img id="bloop_img"></img>
+	<body>
+		<div class="nav">
+			<div class="container">
+				
+				<div class="pull-left">
+					<div class="thumbnail">
+						<img src="http://puu.sh/fzvaJ/e2a3797d47.png" width="120">
+					</div> <!--"thumbnail"-->
+				</div> <!--"pull-left"-->
 
-<audio id="fart_sound" src="sounds/0_fart.mp3"></audio>
-<img id="fart_img"></img>
+				<div class="pull-right">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#">Freestyle</a></li>
+						<li><a href="https://www.google.com">Extension</a></li>
+						<li><a href="#">Extension</a></li>
+					</ul> <!--"nav nav-tabs"-->
+				</div> <!--"pull-right"-->
 
-<audio id="fightsong_sound" src="sounds/1_fightsong.mp3"></audio>
-<img id="fightsong_img"></img>
+			</div> <!--"container"-->
+		</div> <!--"nav"-->
 
-<audio id="furelise_sound" src="sounds/2_furelise.mp3"></audio>
-<img id="furelise_img"></img>
+		<!-- Image and Sounds -->
+		<div class="display">
+			<audio id="bloop_sound" src="sounds/space_bloop.mp3"></audio>
+			<img id="bloop_img" height="500"></img>
 
-<audio id="scream_sound" src="sounds/3_scream.mp3"></audio>
-<img id="scream_img"></img>
+			<audio id="fart_sound" src="sounds/0_fart.mp3"></audio>
+			<img id="fart_img" height="500"></img>
 
-<audio id="baymax_sound" src="sounds/4_baymax.mp3"></audio>
-<img id="baymax_img"></img>
+			<audio id="fightsong_sound" src="sounds/1_fightsong.mp3"></audio>
+			<img id="fightsong_img" height="500"></img>
 
-<audio id="minion_sound" src="sounds/5_minion.mp3"></audio>
-<img id="minion_img"></img>
+			<audio id="furelise_sound" src="sounds/2_furelise.mp3"></audio>
+			<img id="furelise_img" height="500"></img>
 
-<audio id="basketball_sound" src="sounds/6_basketball.mp3"></audio>
-<img id="basketball_img"></img>
+			<audio id="scream_sound" src="sounds/3_scream.mp3"></audio>
+			<img id="scream_img" height="500"></img>
 
-<audio id="opera_sound" src="sounds/7_operasinger.mp3"></audio>
-<img id="opera_img"></img>
+			<audio id="baymax_sound" src="sounds/4_baymax.mp3"></audio>
+			<img id="baymax_img" height="500"></img>
 
-<audio id="triangle_sound" src="sounds/8_triangle.mp3"></audio>
-<img id="triangle_img"></img>
+			<audio id="minion_sound" src="sounds/5_minion.mp3"></audio>
+			<img id="minion_img" height="500"></img>
 
-<audio id="whistle_sound" src="sounds/9_whistle.mp3"></audio>
-<img id="whistle_img"></img>
+			<audio id="basketball_sound" src="sounds/6_basketball.mp3"></audio>
+			<img id="basketball_img" height="500"></img>
 
-<script src="key.js"></script>
+			<audio id="opera_sound" src="sounds/7_operasinger.mp3"></audio>
+			<img id="opera_img" height="500"></img>
 
-</body>
+			<audio id="triangle_sound" src="sounds/8_triangle.mp3"></audio>
+			<img id="triangle_img" height="500"></img>
+
+			<audio id="whistle_sound" src="sounds/9_whistle.mp3"></audio>
+			<img id="whistle_img" height="500"></img>
+		</div>
+
+		<div class="instructions">
+			<div class="container">
+				<input id="PlayBack" type="button" value="Play Back" onclick="playBack();" />
+				<input id="ClearHistory" type="button" value="Clear History" onclick="clearHistory()"/>
+				<p><strong>Instructions:</strong> Press any key and see what happens!</p>
+			</div> <!--"container"-->
+		</div> <!--"instructions"-->
+
+		<footer class="footer">
+			<div class="container">
+				<p><strong>Contributors:</strong> Margaret Qian, Courtney Wong, Angel Yang, Danielle Jing</p>
+			</div> <!--"container"-->
+		</footer>
+		
+	</body>
+
+	<script src="key.js"></script>
 </html>

@@ -1,5 +1,4 @@
 window.addEventListener("keydown", keyPress, false);
-window.addEventListener("mousedown", mouseClick);
 
 var sounds = {};
 var images = {};
@@ -52,20 +51,11 @@ image_path[57] = 'images/9_whistle.png';
 var playHistory = [];
 
 function keyPress(e) {
-    playKey(e);
+    playKey(e.keyCode);
     playHistory.push(e.keyCode);
 }
 
-function playKey(e)
-{
-	sounds[e.keyCode].play();
-    setTimeout(function(){
-    	images[e.keyCode].src='';
-    },sounds[e.keyCode].duration*1000)
-    images[e.keyCode].src=image_path[e.keyCode];
-}
-
-function playAgain(code){
+function playKey(code){
 	sounds[code].play();
     setTimeout(function(){
     	images[code].src='';
@@ -74,11 +64,21 @@ function playAgain(code){
 }
 
 function playBack() {
-	for (var i = 0; i < playHistory.length; i++){
-		playAgain(playHistory[i]);
-	}
+	var index = 0;
+    var stopId;
+    playKey(playHistory[index]);
+    stopId = setInterval(function(){
+        index++;
+        if(index >= playHistory.length){
+            clearInterval(stopId)
+        }
+        if(index < playHistory.length){
+            playKey(playHistory[index]);
+        }
+    },sounds[playHistory[index]].duration*1000 + 1000);
 }
 
-function mouseClick(){
-	playBack();
+function clearHistory(){
+	playHistory = [];
 }
+

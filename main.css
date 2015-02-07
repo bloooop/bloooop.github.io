@@ -1,0 +1,39 @@
+.nav a {
+	color: #6E6E6E;
+	font-size: 15px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+.nav {
+	margin-top:0px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+.display {
+	padding: 8px;
+	text-align: center;
+}
+
+.instructions {
+	position: fixed;
+	bottom: 20px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	font-size: 15px;
+	text-align: center;
+}
+
+.footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 25px;
+	width: 100%;
+	background-color: #6E6E6E;
+	color: #F2F2F2;
+	text-align: center;
+	padding-top:2px;
+}
