@@ -48,6 +48,35 @@ sounds[57] = document.getElementById('whistle_sound');
 images[57] = document.getElementById('whistle_img');
 image_path[57] = 'images/9_whistle.png';
 
+sounds[65] = document.getElementById('chimes_sound');
+images[65] = document.getElementById('chimes_img');
+image_path[65] = 'images/a_clockchimes.png';
+
+sounds[66] = document.getElementById('tswift_sound');
+images[66] = document.getElementById('tswift_img');
+image_path[66] = 'images/b_tswift.png';
+
+sounds[67] = document.getElementById('moo_sound');
+images[67] = document.getElementById('moo_img');
+image_path[67] = 'images/c_moo.png';
+
+sounds[68] = document.getElementById('rain_sound');
+images[68] = document.getElementById('rain_img');
+image_path[68] = 'images/d_rain.png';
+
+sounds[69] = document.getElementById('santa_sound');
+images[69] = document.getElementById('santa_img');
+image_path[69] = 'images/e_santa.png';
+
+sounds[70] = document.getElementById('hallelujah_sound');
+images[70] = document.getElementById('hallelujah_img');
+image_path[70] = 'images/f_hallelujah.png';
+
+sounds[71] = document.getElementById('cricket_sound');
+images[71] = document.getElementById('cricket_img');
+image_path[71] = 'images/g_cricketchirp.png';
+
+
 var playHistory = [];
 
 function keyPress(e) {
